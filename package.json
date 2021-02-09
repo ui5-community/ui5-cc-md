@@ -4,7 +4,7 @@
   "description": "UI5 custom (notepad) control rendering markdown into html on-the-fly",
   "main": "Markdown.js",
   "scripts": {
-    "test": "run-s test:manual jest",
+    "test": "run-p test:manual jest",
     "jest": "wait-on tcp:8080 && jest",
     "test:manual": "cd test/ui5-app && ui5 serve"
   },
@@ -25,6 +25,7 @@
     "eslint-plugin-jest": "^24.1.3",
     "get-port": "^5.1.1",
     "jest": "^26.6.3",
+    "npm-run-all": "^4.1.5",
     "supertest": "^6.1.3",
     "wait-on": "^5.2.1"
   }
