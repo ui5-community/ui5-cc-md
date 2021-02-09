@@ -4,7 +4,7 @@
   "description": "UI5 custom (notepad) control rendering markdown into html on-the-fly",
   "main": "Markdown.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd test/ui5-app && ui5 serve"
   },
   "keywords": [
     "ui5",
