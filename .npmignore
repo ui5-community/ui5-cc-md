@@ -1,1 +1,7 @@
+.vscode
 test
+.eslintrc
+.gitignore
+.prettierrc
+jest*
+yarn.lock
