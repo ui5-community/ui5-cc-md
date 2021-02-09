@@ -9,7 +9,9 @@
     },
     "globals": {
         "sap": false,
-        "fetch": false
+        "fetch": false,
+        "page": true,
+        "browser": true
     },
     "plugins": [
         "jest"

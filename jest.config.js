@@ -31,7 +31,7 @@ module.exports = {
     // ],
 
     // Indicates which provider should be used to instrument code for coverage
-    coverageProvider: "v8",
+    // coverageProvider: "v8",
 
     // A list of reporter names that Jest uses when writing coverage reports
     // coverageReporters: [
@@ -93,7 +93,7 @@ module.exports = {
     // notifyMode: "failure-change",
 
     // A preset that is used as a base for Jest's configuration
-    // preset: undefined,
+    preset: "jest-puppeteer"
 
     // Run tests from one or more projects
     // projects: undefined,
@@ -137,7 +137,7 @@ module.exports = {
     // snapshotSerializers: [],
 
     // The test environment that will be used for testing
-    testEnvironment: "node"
+    // testEnvironment: "node"
 
     // Options that will be passed to the testEnvironment
     // testEnvironmentOptions: {},
