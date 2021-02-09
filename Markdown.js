@@ -1,4 +1,4 @@
-sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control, /* marked */) => {
+sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marked */) => {
     return Control.extend("cc.md.Markdown", {
         metadata: {
             properties: {
@@ -14,8 +14,8 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control, /* marke
             /**
              * create the view layer by outputting html
              *
-             * @param {sap.ui.core.RenderManager} oRM
-             * @param {sap.ui.core.Control} oControl
+             * @param {sap.ui.core.RenderManager} oRM Render Manager v2
+             * @param {sap.ui.core.Control} oControl this control, ui5-cc-md.Markdown
              */
             render(oRM, oControl) {
                 console.debug(`[${oControl.getMetadata().getName()}] > rendering`)
@@ -29,6 +29,7 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control, /* marke
                 // with retrieved $fromFile's content, triggering re-rendering
                 if (oControl.getContent() !== "") {
                     const sMarkdown = oControl.getContent()
+                    // eslint-disable-next-line no-undef
                     const sHtml = marked(sMarkdown)
                     oRM.unsafeHtml(sHtml)
                 } else if (oControl.getFromFile() !== "") {
