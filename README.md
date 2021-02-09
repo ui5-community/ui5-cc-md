@@ -93,4 +93,4 @@ Ran all test suites.
 
 ## License
 
-This work is under the Derived Beer-ware License. When you like this stuff, buy [@vobu](https://twitter.com/vobu),  [@matz3](https://twitter.com/matthiaso), [@wridgeu](https://twitter.com/wridgeu) and a beer or buy [@pmuessig](https://twitter.com/pmuessig) a coke when you see them.
+This work is under the Derived Beer-ware License. When you like this stuff, buy [@vobu](https://twitter.com/vobu),  [@matz3](https://twitter.com/matthiaso), [@wridgeu](https://twitter.com/wridgeu) a beer or buy [@pmuessig](https://twitter.com/pmuessig) a coke when you see them.
