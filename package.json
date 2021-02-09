@@ -1,0 +1,21 @@
+{
+  "name": "ui5-cc-md",
+  "version": "0.0.1",
+  "description": "UI5 custom (notepad) control rendering markdown into html on-the-fly",
+  "main": "Markdown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui5",
+    "custom",
+    "control",
+    "notepad",
+    "control"
+  ],
+  "author": "Volker Buzek <volker.buzek@js-soft.com>",
+  "license": "Beerware",
+  "dependencies": {
+    "marked": "^1.2.9"
+  }
+}
