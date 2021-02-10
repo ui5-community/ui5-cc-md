@@ -15,4 +15,9 @@ describe("Markdown", () => {
         await expect(page).toMatchElement("h2", { text: "second" })
         await expect(page).toMatchElement("h3", { text: "third" })
     })
+
+    test("should render markdown via binding", async () => {
+        await page.goto(`${url}/index.html`)
+        await expect(page).toMatchElement("strong", { text: "fat content" })
+    })
 })

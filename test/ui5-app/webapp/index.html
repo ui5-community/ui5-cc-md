@@ -15,8 +15,12 @@
       "sap/ui/core/Core"
     ], (Core) => Core.attachInit(() => sap.ui.require([
       "sap/ui/core/mvc/XMLView",
-    ], async (XMLView) => {
-      const view = await XMLView.create({
+      "sap/ui/model/json/JSONModel"
+    ], async (XMLView, JSONModel) => {
+      const Model = new JSONModel({
+        markdownContent: "**fat content**"
+      })
+      const View = await XMLView.create({
         definition: `
     <mvc:View xmlns:mvc="sap.ui.core.mvc" 
         xmlns="sap.m" 
@@ -30,14 +34,15 @@
             <HBox justifyContent="SpaceAround">
               <md:Markdown content="***markdown is nice!***&#13;&#10;&#13;&#10;if only there wasn't the CR problem..." />
 				      <md:Markdown fromFile="./fragment.md" />
+				      <md:Markdown content="{/markdownContent}" />
             </HBox>
           </VBox>
         </Page>
       </App>
     </mvc:View>`,
       })
-
-      view.placeAt("content");
+      View.setModel(Model)
+      View.placeAt("content")
     })))
   </script>
 </head>
