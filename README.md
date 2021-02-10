@@ -1,6 +1,6 @@
 # UI5 custom control `ui5-cc-md`
 
-This custom control renders regular + github-flavored Markdown content, either provided as a string or from a file.  
+This namespace contains a custom control rendering regular + github-flavored Markdown content, either provided as a string or from a file.  
 It outputs plain HTML, ready to be included in an XML view.
 
 ## Install
