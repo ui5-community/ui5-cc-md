@@ -15,7 +15,7 @@
   "author": "Volker Buzek <volker.buzek@js-soft.com>",
   "license": "Beerware",
   "dependencies": {
-    "marked": "^1.2.9"
+    "marked": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
