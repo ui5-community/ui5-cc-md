@@ -21,24 +21,23 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
                 console.debug(`[${oControl.getMetadata().getName()}] > rendering`)
                 oRM.openStart("div", oControl)
                 oRM.openEnd()
-                // hack(y): if control's content property is filled,
-                // render its content (md-string) -> html
-                // BUT: if control's fromFile property is filled,
-                // retrieve that $fromFile's content,
-                // then abuse ui5 control lifecycle to set `content` property
-                // with retrieved $fromFile's content, triggering re-rendering
-                if (oControl.getContent() !== "") {
-                    const sMarkdown = oControl.getContent()
+                const sMarkdown = oControl.getContent()
+                if (sMarkdown) {
                     // eslint-disable-next-line no-undef
                     const sHtml = marked(sMarkdown)
                     oRM.unsafeHtml(sHtml)
-                } else if (oControl.getFromFile() !== "") {
+                    oRM.close("div")
+                } else if (oControl.getFromFile()) {
                     fetch(oControl.getFromFile())
                         .then((r) => r.text())
-                        .then((md) => oControl.setContent(md))
+                        .then((md) => {
+                            // eslint-disable-next-line no-undef
+                            const sHtml = marked(md)
+                            oRM.unsafeHtml(sHtml)
+                            oRM.close("div")
+                        })
                         .catch((err) => console.error(`[${oControl.getMetadata().getName()}] > ERR: ${err}`))
                 }
-                oRM.close("div")
             }
         }
     })

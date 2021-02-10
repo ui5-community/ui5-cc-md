@@ -7,21 +7,21 @@
   <script id="sap-ui-bootstrap"
           src="resources/sap-ui-core.js"
           data-sap-ui-theme="sap_fiori_3_dark"
-          data-sap-ui-xx-cssVariables="true"
+          data-sap-ui-libs="sap.ui.core,sap.m"
+          data-sap-ui-oninit="startUp"
           data-sap-ui-async="true">
           </script>
   <script>
-    sap.ui.require([
-      "sap/ui/core/Core"
-    ], (Core) => Core.attachInit(() => sap.ui.require([
-      "sap/ui/core/mvc/XMLView",
-      "sap/ui/model/json/JSONModel"
-    ], async (XMLView, JSONModel) => {
-      const Model = new JSONModel({
-        markdownContent: "**fat content**"
-      })
-      const View = await XMLView.create({
-        definition: `
+    function startUp() {
+      sap.ui.require([
+        "sap/ui/core/mvc/XMLView",
+        "sap/ui/model/json/JSONModel"
+      ], async (XMLView, JSONModel) => {
+        const Model = new JSONModel({
+          markdownContent: "**fat content**"
+        })
+        const View = await XMLView.create({
+          definition: `
     <mvc:View xmlns:mvc="sap.ui.core.mvc" 
         xmlns="sap.m" 
         xmlns:md="cc.md"
@@ -40,10 +40,12 @@
         </Page>
       </App>
     </mvc:View>`,
+        })
+        View.setModel(Model)
+        View.placeAt("content")
       })
-      View.setModel(Model)
-      View.placeAt("content")
-    })))
+    }
+
   </script>
 </head>
 
