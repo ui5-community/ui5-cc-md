@@ -93,7 +93,7 @@
     xml2js "^0.4.23"
     yazl "^2.5.1"
 
-"@ui5/cli@*":
+"@ui5/cli@^2.10.0":
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-2.10.0.tgz#d7ac4097253c97c981d8088788badd20def0110f"
   integrity sha512-kBX3JGUw9IlbVZWOCb7S9eiFQw2zJHB6BiIKrj1QgssATpc0CUqsRvNy6+qNkz3r8toixgBGLNCTjILa9n208w==
@@ -2123,10 +2123,10 @@ marked@^0.8.2:
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.8.2.tgz#4faad28d26ede351a7a1aaa5fec67915c869e355"
   integrity sha512-EGwzEeCcLniFX51DhTpmTom+dSA/MG/OBUDjnWtHbEnjAH180VzUeAw+oE4+Zv+CoYBWyRlYOTR0N8SO9R1PVw==
 
-marked@^1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-1.2.9.tgz#53786f8b05d4c01a2a5a76b7d1ec9943d29d72dc"
-  integrity sha512-H8lIX2SvyitGX+TRdtS06m1jHMijKN/XjfH6Ooii9fvxMlh8QdqBfBDkGUpMWH2kQNrtixjzYUa3SH8ROTgRRw==
+marked@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.0.tgz#9662bbcb77ebbded0662a7be66ff929a8611cee5"
+  integrity sha512-NqRSh2+LlN2NInpqTQnS614Y/3NkVMFFU6sJlRFEpxJ/LHuK/qJECH7/fXZjk4VZstPW/Pevjil/VtSONsLc7Q==
 
 mdurl@^1.0.1:
   version "1.0.1"
@@ -3367,12 +3367,12 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
 "ui5-cc-md@file:../..":
   version "0.0.1"
   dependencies:
-    marked "^1.2.9"
+    marked "^2.0.0"
 
-ui5-middleware-livereload@*:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/ui5-middleware-livereload/-/ui5-middleware-livereload-0.5.1.tgz#587b3a595d99237eff3df2262f7023565d921811"
-  integrity sha512-1VKbCyGYIJ1t5BLHRQsQFycmQcut2K6q8DW6PnBe/t6uCcws9/pt6HWGc7XkOtr/oJH6Br7iNTePqD0jpYAFiQ==
+ui5-middleware-livereload@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/ui5-middleware-livereload/-/ui5-middleware-livereload-0.5.2.tgz#c5327293602de2dab90bb0549751a0e14a341e2c"
+  integrity sha512-Hf2c/guS9n4ceEARSzcWbekI6A7hX6sLyKohhamIxZ4MTqe9B7hkQsH3RT5DAoGGuujjAv197EWVvHH7SWy0bA==
   dependencies:
     "@ui5/logger" "^2.0.0"
     connect-livereload "^0.6.1"
