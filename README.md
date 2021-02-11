@@ -63,9 +63,7 @@ The `test` folder contains a minimal UI5 app requiring `ui5-cc-md`.
 For testing manually, do:
 
 ```bash
-$> cd test/ui5-app
-$> yarn # for installing runtime dependencies
-$> ui5 serve
+$> yarn test:manual # runs ui5 serve
 # now point a browser to http://localhost:8080
 ```
 
