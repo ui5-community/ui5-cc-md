@@ -40,8 +40,9 @@ $> npm install ui5-cc-md
    <mvc:View ... 
            xmlns:md="cc.md"
            ...>
-       <md:Markdown content="***markdown is nice!***&#13;&#10;&#13;&#10;if only there wasn't the CR problem in XML view string" />
-   	<md:Markdown fromFile="./fragment.md" />
+      <md:Markdown content="***markdown is nice!***&#13;&#10;&#13;&#10;if only there wasn't the CR problem in XML view string" />
+      <md:Markdown fromFile="./fragment.md" />
+      <md:Markdown content="{/markdownContent}" />
    </mvc:View>
    ```
 
@@ -78,17 +79,18 @@ $> yarn # for installing runtime dependencies
 $> cd ..
 $> yarn test
 # sample output:
- PASS  test/ui5-app/basic.test.js (7.679 s)
+ PASS  test/ui5-app/basic.test.js
   Markdown
-    ✓ should render markdown via content property (5824 ms)
-    ✓ should render markdown via fromFile property (1181 ms)
+    ✓ should render markdown via content property (2374 ms)
+    ✓ should render markdown via fromFile property (854 ms)
+    ✓ should render markdown via binding (672 ms)
 
 Test Suites: 1 passed, 1 total
-Tests:       2 passed, 2 total
+Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        7.76 s
+Time:        4.512 s, estimated 5 s
 Ran all test suites.
-✨  Done in 13.01s.
+✨  Done in 11.90s.
 ```
 
 ## License
