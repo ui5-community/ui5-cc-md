@@ -19,6 +19,10 @@
     "Matthias Oßwald",
     "Marco Beier"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ui5-community/ui5-cc-md.git"
+  },
   "license": "Beerware",
   "dependencies": {
     "marked": "^2.0.0"
