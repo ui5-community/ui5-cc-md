@@ -13,6 +13,11 @@
     "notepad control"
   ],
   "author": "Volker Buzek <volker.buzek@js-soft.com>",
+  "contributors": [
+    "Peter Muessig",
+    "Matthias Oßwald",
+    "Marco Beier"
+  ],
   "license": "Beerware",
   "dependencies": {
     "marked": "^2.0.0"
