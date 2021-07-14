@@ -24,5 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd test/ui5-app && npm i
-    - run: npm run test
+    - run: yarn
+    - run: cd test/ui5-app && yarn
+    - run: yarn test
