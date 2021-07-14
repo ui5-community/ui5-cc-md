@@ -30,7 +30,7 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
                 } else if (oControl.getFromFile()) {
                     fetch(oControl.getFromFile())
                         .then((r) => r.text())
-                        .then((md) => oControl.setContent(md))
+                        .then((md) => oControl.setContent(md)) // make md available (via .getContent()) to the rendering cycle
                         .catch((err) => console.error(`[${oControl.getMetadata().getName()}] > ERR: ${err}`))
                 }
             }
