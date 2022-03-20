@@ -22,6 +22,11 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
                 oRM.openStart("div", oControl)
                 oRM.openEnd()
                 const sMarkdown = oControl.getContent()
+                if (!sMarkdown && !oControl.getFromFile()) {
+                    console.debug(`[${oControl.getMetadata().getName()}] > no content available`)
+                    oRM.close("div")
+                    return
+                }
                 if (sMarkdown) {
                     // eslint-disable-next-line no-undef
                     const sHtml = marked(sMarkdown)
