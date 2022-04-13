@@ -11,7 +11,8 @@
         "sap": false,
         "fetch": false,
         "page": true,
-        "browser": true
+        "browser": true,
+        "marked": true
     },
     "plugins": [
         "jest"

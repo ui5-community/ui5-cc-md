@@ -32,7 +32,6 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
                     return
                 }
                 if (sMarkdown) {
-                    // eslint-disable-next-line no-undef
                     const sHtml = marked(sMarkdown)
                     oRM.unsafeHtml(sHtml)
                     oRM.close("div")
