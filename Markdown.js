@@ -3,7 +3,8 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
         metadata: {
             properties: {
                 content: { type: "string", defaultValue: "", bindable: "bindable" },
-                fromFile: { type: "string", defaultValue: "", bindable: "bindable" }
+                fromFile: { type: "string", defaultValue: "", bindable: "bindable" },
+                baseURL: { type: "string", defaultValue: "", bindable: "bindable" }
             }
         },
         init() {
@@ -18,6 +19,9 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
              * @param {sap.ui.core.Control} oControl this control, ui5-cc-md.Markdown
              */
             render(oRM, oControl) {
+                marked.setOptions({
+                    baseUrl: oControl.getBaseURL()
+                })
                 console.debug(`[${oControl.getMetadata().getName()}] > rendering`)
                 oRM.openStart("div", oControl)
                 oRM.openEnd()
