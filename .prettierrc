@@ -6,13 +6,7 @@
     "semi": false,
     "overrides": [
         {
-            "files": "*.json",
-            "options": {
-                "tabWidth": 2
-            }
-        },
-        {
-            "files": "*.yaml",
+            "files": ["*.yaml", "*.yml", "*.json", "*.md"],
             "options": {
                 "tabWidth": 2
             }
