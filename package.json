@@ -1,6 +1,6 @@
 {
   "name": "ui5-cc-md",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "UI5 custom (notepad) control rendering markdown into html on-the-fly",
   "main": "Markdown.js",
   "scripts": {

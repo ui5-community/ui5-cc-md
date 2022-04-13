@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/ui5-community/ui5-cc-md/compare/v0.0.4...v0.0.5) (2022-04-13)
+
+
+### Features
+
+* add baseurl as option ([#11](https://github.com/ui5-community/ui5-cc-md/issues/11)) ([a937be4](https://github.com/ui5-community/ui5-cc-md/commit/a937be4bf844e8742e8d98fac1fe9d64b96477f5))
+
 ### [0.0.4](https://github.com/ui5-community/ui5-cc-md/compare/v0.0.3...v0.0.4) (2022-03-21)
 
 
