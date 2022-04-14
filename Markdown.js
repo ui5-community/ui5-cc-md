@@ -32,7 +32,7 @@ sap.ui.define(["sap/ui/core/Control", "./marked/marked.min"], (Control /*, marke
                     return
                 }
                 if (sMarkdown) {
-                    const sHtml = marked(sMarkdown)
+                    const sHtml = marked.parse(sMarkdown)
                     oRM.unsafeHtml(sHtml)
                     oRM.close("div")
                 } else if (oControl.getFromFile()) {
