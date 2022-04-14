@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/ui5-community/ui5-cc-md/compare/v0.0.5...v0.0.6) (2022-04-14)
+
+
+### Bug Fixes
+
+* change parse api after upgrade ([#12](https://github.com/ui5-community/ui5-cc-md/issues/12)) ([f81a516](https://github.com/ui5-community/ui5-cc-md/commit/f81a51612cf3906c16158386bf00f6092f15d3ad))
+
 ### [0.0.5](https://github.com/ui5-community/ui5-cc-md/compare/v0.0.4...v0.0.5) (2022-04-13)
 
 
