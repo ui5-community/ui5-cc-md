@@ -5,8 +5,8 @@
   "private": true,
   "license": "Apache-2.0",
   "devDependencies": {
-    "@ui5/cli": "^2.10.0",
-    "ui5-middleware-livereload": "^0.5.2"
+    "@ui5/cli": "^3.3.4",
+    "ui5-middleware-livereload": "^0.8.4"
   },
   "dependencies": {
     "ui5-cc-md": "file:../../"

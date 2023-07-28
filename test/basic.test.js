@@ -2,7 +2,7 @@
 // for booting up `ui5 serve`
 
 const url = "http://localhost:8080"
-jest.setTimeout(10000)
+jest.setTimeout(20000)
 
 describe("Markdown", () => {
     test("should render markdown via content property", async () => {
