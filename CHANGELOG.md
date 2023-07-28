@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/ui5-community/ui5-cc-md/compare/v0.0.6...v0.0.7) (2023-07-28)
+
+
+### Bug Fixes
+
+* render cycle bug (resize-handler) & bump versions ([#14](https://github.com/ui5-community/ui5-cc-md/issues/14)) ([2e6ad08](https://github.com/ui5-community/ui5-cc-md/commit/2e6ad08d23c8ab80e9ea4904c3894f63d003a4ff))
+
 ### [0.0.6](https://github.com/ui5-community/ui5-cc-md/compare/v0.0.5...v0.0.6) (2022-04-14)
 
 
